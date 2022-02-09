@@ -1,17 +1,18 @@
 <!doctype html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Продукт - Барбершоп «Бородинский»</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <header>
-        <nav>
-            <a href="index.html">
+<body class="page-body">
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo">
                 <img src="img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
             </a>
-            <ul>
+            <ul class="site-navigation">
                 <li>
                     <a href="blank.html">Информация</a>
                 </li>
@@ -28,8 +29,10 @@
                     <a href="blank.html">Контакты</a>
                 </li>
             </ul>
-            <a href="blank.html">Вход</a>
-        </nav>
+            <div>
+                <a class="login-link" href="blank.html">Вход</a>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -74,55 +77,55 @@
         </section>
     </main>
 
-    <footer>
-        <section>
+    <footer class="main-footer">
+        <section class="footer-contacts">
             <h2>Как нас найти</h2>
             <p>
                 Барбершоп «Бородинский»<br>
                 Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-                <a href="blank.html">Как нас найти?</a><br>
-                Телефон: <a href="tel:+78126660266">+7 (812) 666-02-66</a>
+                <a class="footer-address" href="blank.html">Как нас найти?</a><br>
+                Телефон: <a class="footer-phone" href="tel:+78126660266">+7 (812) 666-02-66</a>
             </p>
         </section>
 
-        <section>
+        <section class="footer-social">
             <h2>Давайте дружить!</h2>
             <ul>
-                <li><a href="#">Вконтакте</a></li>
-                <li><a href="#">Фейсбук</a></li>
-                <li><a href="#">Инстаграм</a></li>
+                <li><a class="social-button" href="#">Вконтакте</a></li>
+                <li><a class="social-button" href="#">Фейсбук</a></li>
+                <li><a class="social-button" href="#">Инстаграм</a></li>
             </ul>
         </section>
 
-        <p>
+        <p class="footer-copyright">
             Разработано:
-            <a href="https://htmlacademy.ru">HTML Academy</a>
+            <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
         </p>
     </footer>
 
-    <section>
+    <section class="modal modal-login">
         <h2>Личный кабинет</h2>
-        <p>Введите пожалуйста свой логин и пароль</p>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
             <p>
                 <label for="login-login">Логин</label>
-                <input id="login-login" type="email" name="login" placeholder="email@example.com">
+                <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="email@example.com">
             </p>
             <p>
                 <label for="login-password">Пароль</label>
-                <input id="login-password" type="password" name="password" placeholder="••••••••">
+                <input class="login-icon-password" id="login-password" type="password" name="password" placeholder="••••••••">
             </p>
-            <p>
+            <p class="login-help">
                 <label>
                     <input type="checkbox" name="remember">
                     Запомнить меня
                 </label>
-                <a href="#">Я забыл пароль!</a>
+                <a class="restore" href="#">Я забыл пароль!</a>
             </p>
             <button type="button">Войти</button>
         </form>
-        <button type="button">Закрыть</button>
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
-</body>
 
+</body>
 </html>
